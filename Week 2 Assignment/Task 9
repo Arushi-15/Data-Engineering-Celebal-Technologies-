@@ -1,0 +1,20 @@
+n = int(input())                      # Number of elements in the set
+s = set(map(int, input().split()))   # The initial set
+
+N = int(input())                      # Number of commands
+
+for _ in range(N):
+    command = input().strip().split()
+    
+    try:
+        if command[0] == "pop":
+            s.pop()
+        elif command[0] == "remove":
+            s.remove(int(command[1]))
+        elif command[0] == "discard":
+            s.discard(int(command[1]))
+    except (IndexError, KeyError):
+        continue  # Ignore commands with missing arguments or non-existing elements
+
+print(sum(s))
+
