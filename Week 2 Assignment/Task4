@@ -1,0 +1,15 @@
+def print_rangoli(size):
+    # your code goes here
+    import string
+    alpha = string.ascii_lowercase
+    
+    # Generate the pattern lines
+    lines = []
+    for i in range(size):
+        left = alpha[size-1:i:-1]  # descending part
+        right = alpha[i:size]      # ascending part
+        s = '-'.join(left + right)
+        lines.append(s.center(4*size - 3, '-'))  # center the line
+    
+    # Mirror the upper and lower parts
+    print('\n'.join(lines[::-1] + lines[1:]))
