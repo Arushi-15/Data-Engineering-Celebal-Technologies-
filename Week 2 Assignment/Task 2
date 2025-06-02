@@ -1,0 +1,4 @@
+def average(array):
+    # your code goes here
+    unique_elements = set(array)
+    return sum(unique_elements) / len(unique_elements)
