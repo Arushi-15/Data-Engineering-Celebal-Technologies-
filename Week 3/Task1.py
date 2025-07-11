@@ -1,4 +1,4 @@
-/*
+/*SQL Quey to fetch all details
     Enter your query here and follow these instructions:
     1. Please append a semicolon ";" at the end of the query and enter your query in a single line to avoid error.
     2. The AS keyword causes errors, so follow this convention: "Select t.Field From table1 t" instead of "select t.Field From table1 AS t"
